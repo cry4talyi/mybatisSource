@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: lab-test
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://47.98.52.95:6789/mptest?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: klav
+    secondary:
+      jdbc-url: jdbc:mysql://47.98.52.95:6789/ywb2?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: klav
+mybatis:
+  type-aliases-package: cn.ntshare.laboratory.domain
+  configuration:
+    map-underscore-to-camel-case: true
